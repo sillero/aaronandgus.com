@@ -123,6 +123,17 @@ main p {
   object-fit: contain;
 }
 
+.featured-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffaf6;
+}
+
+.featured-bg img {
+  max-width: 736px;
+}
+
 footer {
   font-size: 12px;
   font-family: "Carme", sans-serif;

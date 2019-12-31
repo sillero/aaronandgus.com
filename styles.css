@@ -27,7 +27,7 @@ body {
       rgba(255, 255, 255, 0.9) 0%,
       rgba(255, 255, 255, 0.9) 100%
     ),
-    url("/bg2.jpg");
+    url("/bg.jpg");
 }
 
 header {
@@ -92,7 +92,7 @@ nav a:hover {
 }
 
 section.active,
-section ~ .hero {
+section ~ #home {
   opacity: 1;
   z-index: 0;
   position: relative;
@@ -100,7 +100,7 @@ section ~ .hero {
 }
 
 section,
-section.active ~ .hero {
+section.active ~ #home {
   opacity: 0;
   z-index: -1;
   position: absolute;

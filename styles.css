@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   color: rgb(22, 22, 22);
+  scroll-behavior: smooth;
 }
 
 header {
@@ -35,9 +36,9 @@ nav {
 
 nav a {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.5em;
   color: rgb(22, 22, 22);
-  margin: 20px;
+  margin: 10px 20px;
   text-transform: uppercase;
   display: inline-block;
 }
@@ -84,6 +85,13 @@ main.active ~ .hero {
   position: absolute;
 }
 
+main p {
+  max-width: 736px;
+  padding: 0 32px;
+  margin: 32px auto;
+  font-size: 1.5em;
+}
+
 .hero-content {
   position: absolute;
   top: 0;
@@ -126,6 +134,11 @@ footer {
   h1 {
     font-size: 3em;
   }
+
+  nav a {
+    font-size: 1.3em;
+  }
+
   .hero-content h2 {
     font-size: 3em;
   }

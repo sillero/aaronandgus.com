@@ -87,7 +87,7 @@ main.active ~ .hero {
   height: 1px;
   top: 0;
   overflow: hidden;
-  transition: opacity .4s;
+  transition: opacity 0.4s;
 }
 
 main p {
@@ -130,6 +130,31 @@ footer {
   padding: 32px;
 }
 
+#location iframe {
+  width: 100%;
+}
+
+#go-to-top {
+  display: none;
+  position: fixed;
+  bottom: 73px;
+  left: 50%;
+  margin-left: -58px;
+  background: #fff;
+  border: 1px solid#eee;
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 2px 2px aliceblue;
+  cursor: pointer;
+  color: rgb(113, 111, 111);
+  font-size: 1.1em;
+  width: 116px;
+}
+
+#go-to-top.active {
+  display: block;
+}
+
 @media (max-width: 635px) {
   .hero-content h2 {
     font-size: 4em;
@@ -147,8 +172,4 @@ footer {
   .hero-content h2 {
     font-size: 3em;
   }
-}
-
-#location iframe {
-  width: 100%;
 }

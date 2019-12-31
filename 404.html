@@ -43,7 +43,9 @@
         allowfullscreen=""
       ></iframe>
       <p class="font-main">
-        If you're flying in, you should arrive at the Greenville-Spartanburg International Airport (GSP). We will be blocking rooms at a hotel in Greenville. More details TBA.
+        If you're flying in, you should arrive at the Greenville-Spartanburg
+        International Airport (GSP). We will be blocking rooms at a hotel in
+        Greenville. More details TBA.
       </p>
 
       <p class="font-main">
@@ -72,6 +74,8 @@
         <img src="/MBP_7093.jpg" alt="" role="presentation" />
       </div>
     </main>
+
+    <button id="go-to-top">Back to top</button>
 
     <footer>
       Made by Gus • Approved by Aaron <br />
@@ -104,6 +108,23 @@
           toggleSection(href.slice(1));
         });
       }
+
+      const $nav = document.querySelector("nav");
+      const $goToTop = document.querySelector("#go-to-top");
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            $goToTop.classList.toggle("active", !entry.isIntersecting);
+          });
+        },
+        { root: document.querySelector("nav") }
+      );
+
+      $goToTop.addEventListener("click", () => {
+        window.scrollTo(0, 0);
+      });
+
+      observer.observe($nav);
     </script>
   </body>
 </html>

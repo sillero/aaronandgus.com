@@ -111,14 +111,11 @@
 
       const $nav = document.querySelector("nav");
       const $goToTop = document.querySelector("#go-to-top");
-      const observer = new IntersectionObserver(
-        entries => {
-          entries.forEach(entry => {
-            $goToTop.classList.toggle("active", !entry.isIntersecting);
-          });
-        },
-        { root: document.querySelector("nav") }
-      );
+      const observer = new IntersectionObserver(entries => {
+        for (const { isIntersecting } of entries) {
+          $goToTop.classList.toggle("active", !isIntersecting);
+        }
+      });
 
       $goToTop.addEventListener("click", () => {
         window.scrollTo(0, 0);

@@ -76,6 +76,7 @@ main ~ .hero {
   opacity: 1;
   z-index: 0;
   position: relative;
+  height: auto;
 }
 
 main,
@@ -83,6 +84,10 @@ main.active ~ .hero {
   opacity: 0;
   z-index: -1;
   position: absolute;
+  height: 1px;
+  top: 0;
+  overflow: hidden;
+  transition: opacity .4s;
 }
 
 main p {

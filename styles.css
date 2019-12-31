@@ -71,6 +71,13 @@ h1 {
   margin: 0;
 }
 
+h1,
+h2,
+h3 {
+  max-width: 736px;
+  margin: 0 auto;
+}
+
 main.active,
 main ~ .hero {
   opacity: 1;
@@ -139,6 +146,34 @@ footer {
   font-family: "Carme", sans-serif;
   text-align: center;
   padding: 32px;
+}
+
+#our-story h2 {
+  font-size: 3em;
+  color: #4f4f4f;
+  margin-top: 48px;
+}
+
+#our-story h2,
+#our-story p {
+  text-align: center;
+}
+
+#our-story p {
+  margin: 48px auto;
+}
+
+#our-story hr {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(160, 160, 160, 0),
+    rgba(160, 160, 160, 0.75),
+    rgba(160, 160, 160, 0)
+  );
 }
 
 #location iframe {

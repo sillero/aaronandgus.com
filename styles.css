@@ -153,6 +153,7 @@ section p {
 
 .featured-bg img {
   max-width: 736px;
+  width: 100%;
 }
 
 footer {

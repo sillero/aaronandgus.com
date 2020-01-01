@@ -108,6 +108,7 @@ section.active ~ #home {
   top: 0;
   overflow: hidden;
   transition: opacity 0.4s;
+  width: 100%;
 }
 
 section p {

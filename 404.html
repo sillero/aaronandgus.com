@@ -149,6 +149,10 @@
         });
       }
 
+      window.addEventListener("popstate", () =>
+        toggleSection(location.pathname.slice(1))
+      );
+
       const $nav = document.querySelector("nav");
       const $goToTop = document.querySelector("#go-to-top");
       const observer = new IntersectionObserver(entries => {

@@ -71,6 +71,7 @@ h2,
 h3 {
   max-width: 736px;
   margin: 0 auto;
+  text-align: center;
 }
 
 nav {
@@ -118,6 +119,11 @@ section p {
   font-size: 1.5em;
 }
 
+.links a {
+  display: block;
+  margin-bottom: 5px;
+}
+
 .hero-content {
   position: absolute;
   top: 0;
@@ -163,16 +169,18 @@ footer {
   padding: 32px;
 }
 
-#our-story h2 {
+#our-story h2,
+#our-story h3 {
   font-size: 3em;
   color: #4f4f4f;
   margin-top: 48px;
-}
-
-#our-story h2,
-#our-story p {
   text-align: center;
 }
+
+#our-story h3 {
+  font-size: 2em;
+}
+
 
 #our-story p {
   margin: 48px auto;
@@ -205,7 +213,7 @@ footer {
   border: 1px solid#eee;
   padding: 10px;
   border-radius: 16px;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   color: rgb(113, 111, 111);
   font-size: 1.1em;

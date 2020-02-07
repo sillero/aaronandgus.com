@@ -119,9 +119,8 @@ section p {
   font-size: 1.5em;
 }
 
-.links a {
-  display: block;
-  margin-bottom: 5px;
+.links {
+  line-height: 40px;
 }
 
 .hero-content {
@@ -180,7 +179,6 @@ footer {
 #our-story h3 {
   font-size: 2em;
 }
-
 
 #our-story p {
   margin: 48px auto;

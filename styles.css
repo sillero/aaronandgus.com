@@ -199,6 +199,7 @@ footer {
 
 #location iframe {
   width: 100%;
+  margin-bottom: 32px;
 }
 
 #go-to-top {

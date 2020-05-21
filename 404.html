@@ -29,6 +29,7 @@
       <a href="/our-story">Our Story</a>
       <a href="/location">Venue & Travel</a>
       <a href="/registry">Registry</a>
+      <a href="https://forms.gle/KmFts1HFfyJ9UDgN7" target="_blank"><u>RSVP</u></a>
     </nav>
 
     <main>
@@ -150,6 +151,12 @@
           >
         </p>
 
+        <h2>Hotel</h2>
+        <p>
+          We have blocked off rooms at the Courtyard Marriott in Downtown Greenville. Please <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1587679733168&key=GRP&app=resvlink">click this link to reserve by June 16th at a reduced rate.</a>
+        </p>
+
+        <h2>Shuttle</h2>
         <p>
           To make it easier travelling between Greenville and the venue, there
           will be shuttles available on a schedule. More details TBA.
@@ -235,9 +242,11 @@
 
       for (const link of document.querySelectorAll("nav a")) {
         link.addEventListener("click", e => {
-          e.preventDefault();
-
           const href = link.getAttribute("href");
+
+          if (href[0] === '/') {
+            e.preventDefault();
+          }
 
           history.pushState({}, link.innerText, href);
 

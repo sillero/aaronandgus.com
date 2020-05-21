@@ -1,16 +1,19 @@
-.color-dark {
-  color: rgb(22, 22, 22);
-}
-
-.font-secondary {
+.font-secondary,
+footer,
+header {
   font-family: "Carme", sans-serif;
 }
 
-.font-primary {
+.font-primary,
+h1,
+nav,
+section {
   font-family: "Thasadith", sans-serif;
 }
 
-.font-cursive {
+.font-cursive,
+h2,
+h3 {
   font-family: "Dancing Script", cursive;
 }
 
@@ -57,15 +60,6 @@ header {
   text-transform: uppercase;
 }
 
-h1 {
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: normal;
-  font-size: 4em;
-  padding: 26px 16px 0;
-  margin: 0;
-}
-
 h1,
 h2,
 h3 {
@@ -73,6 +67,25 @@ h3 {
   margin: 0 auto;
   text-align: center;
 }
+
+h1 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 4em;
+  padding: 26px 16px 0;
+}
+
+h2,
+h3 {
+  font-size: 3em;
+  color: #4f4f4f;
+  margin-top: 48px;
+}
+
+h3 {
+  font-size: 2em;
+}
+
 
 nav {
   text-align: center;
@@ -112,7 +125,8 @@ section.active ~ #home {
   width: 100%;
 }
 
-section p {
+section p,
+section ul {
   max-width: 736px;
   padding: 0 32px;
   margin: 32px auto;
@@ -121,6 +135,8 @@ section p {
 
 .links {
   line-height: 40px;
+  padding-left: 76px;
+  color: #555;
 }
 
 .hero-content {
@@ -168,16 +184,8 @@ footer {
   padding: 32px;
 }
 
-#our-story h2,
-#our-story h3 {
-  font-size: 3em;
-  color: #4f4f4f;
-  margin-top: 48px;
-  text-align: center;
-}
-
-#our-story h3 {
-  font-size: 2em;
+footer a {
+  color: rgb(22, 22, 22);
 }
 
 #our-story p {

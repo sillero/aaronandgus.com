@@ -234,7 +234,7 @@ footer a {
   overflow: hidden;
   padding-bottom: 42.19%;
   position: relative;
-  margin: 64px auto;
+  margin: 16px auto;
   display: block;
   max-width: 736px;
   max-height: 311px;
@@ -247,6 +247,13 @@ footer a {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+#media .video-wrapper {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 736px;
+  font-size: 24px;
 }
 
 @media (max-width: 635px) {

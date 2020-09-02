@@ -229,10 +229,24 @@ footer a {
 #go-to-top.active {
   display: block;
 }
-
-#media iframe {
+.iframe-container {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-bottom: 42.19%;
+  position: relative;
   margin: 64px auto;
   display: block;
+  max-width: 736px;
+  max-height: 311px;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 @media (max-width: 635px) {

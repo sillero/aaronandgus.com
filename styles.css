@@ -86,7 +86,6 @@ h3 {
   font-size: 2em;
 }
 
-
 nav {
   text-align: center;
   padding: 10px 16px 16px;
@@ -228,6 +227,11 @@ footer a {
 }
 
 #go-to-top.active {
+  display: block;
+}
+
+#media iframe {
+  margin: 64px auto;
   display: block;
 }
 
